@@ -1,0 +1,21 @@
+.mainLogo
+  font-family: $logoFont
+  &__link
+    text-transform: lowercase
+    font-size: 30px
+    transition: color .3s ease
+    color: $mainColor
+    vertical-align: top
+    display: inline-block
+    &:hover
+      color: lighten($mainColor, 25%)
+      text-decoration: none
+    &:before
+      content: ''
+      display: inline-block
+      left: 0
+      background: url("../img/logo.png") center no-repeat
+      width: 44px
+      height: 50px
+      margin-right: 10px
+      vertical-align: top

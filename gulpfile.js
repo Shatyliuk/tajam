@@ -49,7 +49,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('js:dev', function () {
-    return gulp.src(['./dev/static/js/libs/*.min.js'])
+    return gulp.src(['node_modules/owl.carousel/dist/owl.carousel.min.js', './dev/static/js/libs/*.min.js'])
         .pipe(concat('libs.min.js'))
         .pipe(gulp.dest('./build/static/js/'))
         .pipe(browserSync.reload({
@@ -58,7 +58,7 @@ gulp.task('js:dev', function () {
 });
 
 gulp.task('js:build', function () {
-    return gulp.src(['./dev/static/js/libs/*.min.js'])
+    return gulp.src(['node_modules/owl.carousel/dist/owl.carousel.min.js', './dev/static/js/libs/*.min.js'])
         .pipe(concat('libs.min.js'))
         .pipe(uglifyjs())
         .pipe(gulp.dest('./build/static/js/'))
@@ -110,7 +110,7 @@ gulp.task('watch', function () {
     gulp.watch('./dev/static/sass/**/*.sass', gulp.series('sass:dev'));
     gulp.watch('./dev/static/img/svg/*.svg', gulp.series('svg:copy'));
     gulp.watch('./dev/static/js/**/*.js', gulp.series('js:dev', 'js:copy'));
-    gulp.watch(['./dev/static/img/general/**/*.{png,jpg,gif}', './dev/static/img/content/**/*.{png,jpg,gif}'], gulp.series('img:dev'));
+    gulp.watch(['./dev/static/img/**/*.{png,jpg,gif}', './dev/static/img/content/**/*.{png,jpg,gif}'], gulp.series('img:dev'));
 });
 
 gulp.task('dev', gulp.series('clean', gulp.parallel('sass:dev', 'pug', 'js:dev', 'js:copy', 'img:dev', 'fonts', 'svg:copy')));
