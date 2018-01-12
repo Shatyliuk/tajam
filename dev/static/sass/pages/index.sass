@@ -23,6 +23,8 @@
     line-height: 22px
 .sectionHeader
   margin-bottom: 45px
+  &-black
+    color: #000
   &__header
     font-family: $headerFont
     font-size: 22px
@@ -40,7 +42,10 @@
       left: 50%
       transform: translate(-50%,0)
       margin: 15px 0 0 0
-.skillItem
+.items
+  &-black
+    color: #000
+.item
   text-align: -webkit-center
   text-align: -moz-center
   &__image
@@ -71,6 +76,12 @@
       width: 50px
       height: 46px
       margin-bottom: 39px
+    &-dog
+      background: url("../img/animal.jpg") no-repeat
+      background-size: contain
+      width: 100%
+      height: 150px
+      margin-bottom: 39px
   &__header
     font-size: 14px
     margin-bottom: 25px
@@ -83,4 +94,7 @@
   background-color: #ebebeb
   margin-top: 35px
   margin-bottom: 35px
-
+.text
+  color: #000
+  font-family: $headerText
+  margin-bottom: 50px
