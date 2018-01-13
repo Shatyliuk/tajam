@@ -31,6 +31,8 @@
     margin-bottom: 15px
     &-black
       color: #000
+    &-left
+      text-align: left
   &__text
     font-family: $headerText
     font-size: 14px
@@ -135,3 +137,28 @@
   display: inline-block
   img
     height: 100%
+
+.form
+  font-family: $headerText
+  font-size: 14px
+  color: #b9b7bd
+  &__input
+    width: 100%
+    padding: 15px 20px
+    border: 1px solid #e5e5e5
+    margin-bottom: 25px
+    transition: all .3s ease
+    &:focus
+      border: 1px solid $mainColor
+  &__area
+    width: 100%
+    padding: 20px
+    height: 200px
+    margin-bottom: 20px
+    transition: all .3s ease
+    &:focus
+      outline: none
+      border: 1px solid $mainColor
+.clientItem
+  &-margin
+    margin-bottom: 55px
