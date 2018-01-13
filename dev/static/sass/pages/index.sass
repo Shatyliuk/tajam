@@ -29,6 +29,8 @@
     font-family: $headerFont
     font-size: 22px
     margin-bottom: 15px
+    &-black
+      color: #000
   &__text
     font-family: $headerText
     font-size: 14px
@@ -104,3 +106,31 @@
   margin-bottom: 20px
 .vieotext
   text-transform: uppercase
+
+.dribbleLink
+  &__link
+    color: #413d4b
+    &:hover
+      text-decoration: none
+      color: #413d4b
+      &:after
+        margin-left: 15px
+        transform: scale(1.2)
+    &:after
+      content: ''
+      background: url("../img/arrow.png") center center no-repeat
+      width: 8px
+      height: 13px
+      display: inline-block
+      margin-left: 10px
+      vertical-align: middle
+      transition: all .3s ease
+
+.works
+  margin-bottom: 70px
+.works__item
+  height: 200px
+  width: 270px
+  display: inline-block
+  img
+    height: 100%
