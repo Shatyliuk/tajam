@@ -4,19 +4,71 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-  header
+  .logoBlock
+    &__text
+      margin-bottom: 55px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-  header
-
+  .menu
+    &__item
+      padding-right: 5px
+  .storyImage
+    text-align: -webkit-center
+    text-align: -moz-center
+  .storyText
+    &__header
+      text-align: -webkit-center
+      text-align: -moz-center
+  .form
+    margin-bottom: 40px
+  .logoBlock
+    text-align: center
+    margin-bottom: 25px
+    &__text
+      margin-bottom: 25px
+  .contacts
+    text-align: center
+    margin-bottom: 25px
+    &__text
+      padding-left: 0
+    &__paragraph
+      &:before
+        position: static
+        margin-right: 15px
+  .footerHeader
+    margin-bottom: 25px
+  .socialLinks
+    text-align: center
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-  header
+  .menu
+    transition: all .3s ease
+    transform: translateY(-100%)
+    background-color: #ccc
+    text-align: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding-top: 50px
+    z-index: 9999
+    &-open
+      display: block
+      transform: translateY(0)
+    &__item
+      display: block
+  .menuButton
+    display: inline-block
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-  header
+  .headerCarousel
+    &-dots
+    .owl-dot
+      width: 30px!important
+      height: 30px!important
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
