@@ -6,8 +6,8 @@ block content
         .container
             .row
                 .storyImage.col-lg-3.offset-lg-1
-                    .storyImage__img
-                .storyText.col-lg-7.offset-lg-1
+                    .storyImage__img(id='imageTriangle')
+                .storyText.col-lg-7.offset-lg-1(id='storyText')
                     h2.storyText__header OUR STORY
                     p.storyText__paragraph This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
                     p.storyText__paragraph Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -155,7 +155,7 @@ block content
     section.section.sectionForm
         .container
             .row
-                .formWrapper.col-lg-6
+                .formWrapper.col-lg-6(id='form')
                     .sectionHeader
                         h2.sectionHeader__header.sectionHeader__header-black.sectionHeader__header-left Give Us Good News
                     form.form
@@ -165,7 +165,7 @@ block content
                         textarea(placeholder='Your message').form__area
                         .mainButton.mainButton-left
                             a(href='#').mainButton__link Submit
-                .clients.col-lg-5.offset-lg-1
+                .clients.col-lg-5.offset-lg-1(id='client')
                     .sectionHeader
                         h2.sectionHeader__header.sectionHeader__header-black.sectionHeader__header-left Our Happy Clients
                     .clientItems

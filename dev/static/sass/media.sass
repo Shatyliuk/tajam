@@ -10,6 +10,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  .headerNavigation
+    animation: none
   .menu
     transition: all .3s ease
     transform: translateY(-100%)
@@ -27,6 +29,8 @@
       transform: translateY(0)
     &__item
       display: block
+      &-open
+        animation: showText 3s
   .menuButton
     display: inline-block
   .storyImage

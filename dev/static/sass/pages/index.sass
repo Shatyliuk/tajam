@@ -8,9 +8,17 @@
     background: url("../img/rectangle.png") center center no-repeat
     height: 229px
     width: 235px
+    opacity: 0
+    &-show
+      animation: showItemLeft 2s
+      opacity: 1
 .storyText
   color: #000
   text-align: left
+  opacity: 0
+  &-show
+    animation: showItemRight 2s
+    opacity: 1
   &__header
     font-family: $headerFont
     font-size: 22px
@@ -52,6 +60,10 @@
   margin-bottom: 20px
   &__image
     margin: 0 auto 35px
+    opacity: 0
+    &-show
+      animation: showIcons 2s
+      opacity: 1
     &-web
       background: url("../img/web.png")
       width: 49px
@@ -134,7 +146,16 @@
   display: inline-block
   img
     height: 100%
-
+.formWrapper
+  opacity: 0
+  &-show
+    animation: showForm 2s
+    opacity: 1
+.clients
+  opacity: 0
+  &-show
+    animation: showItemRight 2s
+    opacity: 1
 .form
   font-family: $headerText
   font-size: 14px
